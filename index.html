@@ -3,11 +3,250 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Convention center</title>
+    <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <header>
+        <!------ Navber start ------->
+        <section class="container pt-3 pb-2.5">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <a class="navbar-brand fw-bold" href="#">Abacus Convention Center</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link">Subscribe</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </section>
+        <!-- Hero banner slider start  -->
+        <section >
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/banner.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>The perfect venue for your next event</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, alias?</p>
+                  <button class="btn btn-light ps-5 pe-5 mb-4 text-primary">Book Now</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/banner.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/banner.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/banner.png" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button"         data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+        <!-- main section start  -->
+        <main class="container">
+            <article class="d-flex align-items-center mt-5">
+                <div class="w-50 me-1"> 
+                    <img class="img-fluid" src="images/wedding.png" alt="">
+                </div>
+                <div class="w-50">
+                    <h2 class="fw-bold">Every moment is Precious</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, nobis! Nostrum nemo sunt, tenetur tempore in rem sed consequuntur labore!</p>
+                    <button class="btn btn-primary">Explore our album <span><img src="icons/arrow-forward 1.svg" alt=""></span></button>
+                </div>
+            </article>
+            <!-- Our package  -->
+            <section class="mt-5">
+                <h2 class="text-center ">Our Package</h2>
+                <div class="row row-cols-1 row-cols-md-4 row-cols-md-1 g-4 mt-5">
+                    <div class="col">
+                      <div class="card h-100 border-0">
+                        <div class="card-body">
+                            <h3 class="fw-bold mb-4">$300</h>
+                          <h5 class="card-title fw-bold">Business fair</h5>
+                          <p class="card-text">For more businesses event like book fair, craft fair.</p>
+                          <ul class="ps-0">
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox" checked>
+                              <label class="form-check-label" for="firstCheckbox">Limited space access</label>
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox" checked>
+                              <label class="form-check-label" for="firstCheckbox">Security facility</label>
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox" checked>
+                              <label class="form-check-label" for="firstCheckbox">Event support</label>
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox" checked>
+                              <label class="form-check-label" for="firstCheckbox">Decoration design</label>
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox" checked>
+                              <label class="form-check-label" for="firstCheckbox">Per day bill</label>
+                            </li>  
+                          </ul>
+                          <button class="btn btn-light rounded-pill text-primary px-5">Choose plan</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100 border-0">
+                        <div class="card-body">
+                            <h3 class="fw-bold mb-4">$500</h3>
+                          <h5 class="card-title fw-bold">Wedding basic</h5>
+                          <p class="card-text">For weddings with basic plan and limited item</p>
+                          <ul class="ps-0">
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox" checked>
+                              <label class="form-check-label" for="firstCheckbox">Full space access</label>
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox" checked>
+                              <label class="form-check-label" for="firstCheckbox">Food arragement</label>
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox" checked>
+                              <label class="form-check-label" for="firstCheckbox">Management support</label>
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox" checked>
+                              <label class="form-check-label" for="firstCheckbox">Decoration design</label>
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox" checked>
+                              <label class="form-check-label" for="firstCheckbox">Billed as shift</label>
+                            </li>  
+                          </ul>
+                          <button class="btn btn-light rounded-pill text-primary px-5">Choose plan</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col mb-5">
+                      <div class="shadow  card h-100 bg-primary text-light border-0  rounded-4">
+                        <div class="card-body pt-5">
+                            <h3 class="fw-bold mb-4">$800</h3>
+                          <h5 class="card-title fw-bold">Wedding plus</h5>
+                          <p class="card-text">For most weddings with premium plans</p>
+                          <ul class="ps-0">
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox" checked>
+                              <label class="form-check-label" for="firstCheckbox">Limited space access</label>
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox" checked>
+                              <label class="form-check-label" for="firstCheckbox">Dedicated team</label>
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox" checked>
+                              <label class="form-check-label" for="firstCheckbox">Buffet food</label>
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox" checked>
+                              <label class="form-check-label" for="firstCheckbox">Premium Decoration</label>
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox" checked>
+                              <label class="form-check-label" for="firstCheckbox">Pay as plan</label>
+                            </li>  
+                          </ul>
+                          <button class="btn btn-light rounded-pill text-primary mb-4 px-5">Choose plan</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100 border-0">
+                        <div class="card-body">
+                            <h3 class="fw-bold mb-4">1200</h3>
+                          <h5 class="card-title fw-bold">Corporate event</h5>
+                          <p class="card-text">For most corporate business events</p>
+                          <ul class="ps-0">
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox" checked>
+                              <label class="form-check-label" for="firstCheckbox">Full space access</label>
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox" checked>
+                              <label class="form-check-label" for="firstCheckbox">Dedicated team</label>
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox" checked>
+                              <label class="form-check-label" for="firstCheckbox">Buffet food</label>
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox" checked>
+                              <label class="form-check-label" for="firstCheckbox">Premium Decoration</label>
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox" checked>
+                              <label class="form-check-label" for="firstCheckbox">Pay as plan</label>
+                            </li>  
+                          </ul>
+                          <button class="btn btn-light rounded-pill text-primary px-5">Choose plan</button>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+            </section>
+        </main>
+    </header>
+
+
+<!----------------------------------------------------------->
+    <!--------------
+    javascript 
+    --------------->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-  </body>
+    </body>
 </html>
